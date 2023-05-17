@@ -9,5 +9,4 @@ async def 한강(interaction:nextcord.Interaction):
     wisenum=random.randint(1,50)
 
     embed=nextcord.Embed(title=f"🏞 현재 한강 수온은 **{temp}℃** 입니다")
-    embed.set_footer(text=data["List"]["wise_saying"][str(wisenum)])
     await interaction.followup.send(embed=embed)
